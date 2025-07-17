@@ -1,12 +1,10 @@
 {
     "name": "discord-nuker",
-    "description": "an advanced script to destroy discord servers. :p",
     "main": "src/login.js",
     "type": "module",
-    "author": "@xthonk",
     "dependencies": {
-        "chalk": "^5.3.0",
-        "discord.js": "^14.14.0",
-        "discord.js-selfbot-v13": "^2.15.0"
+        "chalk": "^5.4.1",
+        "discord.js": "^14.21.0",
+        "discord.js-selfbot-v13": "^3.7.0"
     }
 }

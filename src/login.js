@@ -14,10 +14,10 @@ const handler = new Handler('Login', 'login');
 
     console.clear();
     console.log(chalk.red('\n\n    [Login] Logging in...'));
-    
+
     if (isSelfbot === 'y') return selfLogin(token);
     else if (isSelfbot === 'n') return botLogin(token);
-        
+
     console.log(chalk.red('    [Login] Invalid input!'));
     rl.close();
 })();

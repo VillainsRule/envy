@@ -31,8 +31,7 @@ To run the tool again later, just run this command in the terminal: `cd Discord-
 <h2 align="center">Configuration</h2>
 
 When you boot the program, you'll be asked a few questions.<br>
-To make startup faster each time, set these in config.txt.<br>
-I'm not gonna explain how config.txt works, because it's obvious.
+You can copy `config.example.txt` to `config.txt` and fill it out to speed up the process.
 
 <br>
 Enjoy nuking :v<br>

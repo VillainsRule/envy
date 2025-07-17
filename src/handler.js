@@ -1,5 +1,6 @@
 import fs from 'fs';
 import chalk from 'chalk';
+import path from 'path';
 
 class Handler {
     #utility;
@@ -17,7 +18,7 @@ class Handler {
         this.log(s);
         this.resetPrompt();
     };
-    
+
     endError = (s) => {
         this.error(s);
         this.resetPrompt();
@@ -32,7 +33,10 @@ class Handler {
     };
 
     config = () => {
-        let config = fs.readFileSync('./config.txt', 'utf-8');
+        const configPath = path.join(import.meta.dirname, '..', 'config.txt');
+        if (!fs.existsSync(configPath)) return {};
+
+        const config = fs.readFileSync(configPath, 'utf-8');
         return Object.fromEntries(config.split('\n').map(a => [a.split('=')[0], a.split('=')[1]]));
     };
 };
