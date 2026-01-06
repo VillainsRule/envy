@@ -1,5 +1,4 @@
 <div align="center">
-    <img src="https://i.imgur.com/xqm6Jey.gif" width="90%">
     <h1>Eclipse Nuker</h1>
     <h3>an advanced discord server nuker, complete with a cool terminal UI.</h3>
     <h5>for educational purposes, ofc</h5>
