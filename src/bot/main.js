@@ -13,7 +13,9 @@ const rl = readline.createInterface(process.stdin, process.stdout);
 global.rl = rl;
 global.client = nuker;
 
-nuker.on('ready', () => {
+nuker.on('clientReady', () => {
+    global.client = nuker;
+
     console.clear();
     console.log(chalk.red(`\n\n                                               
         ▓█████  ▄████▄   ██▓     ██▓ ██▓███    ██████ ▓█████     ███▄    █  █    ██  ██ ▄█▀▓█████  ██▀███  
